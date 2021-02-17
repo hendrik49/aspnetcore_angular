@@ -4,7 +4,7 @@
             "previewLimit": 50,
             "driver": "SQLite",
             "name": "angular_netcore",
-            "database": "${workspaceFolder:angular_netcore}/Customers.sqlite"
+            "database": "${workspaceFolder:angular_netcore}/Angularnetcore.sqlite"
         }
     ],
     "sqltools.useNodeRuntime": true
