@@ -1,0 +1,11 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "angular_netcore",
+            "database": "${workspaceFolder:angular_netcore}/Customers.sqlite"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}
