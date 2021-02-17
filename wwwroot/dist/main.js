@@ -49,7 +49,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var routes = [
     { path: 'customers', component: _customers_customers_component__WEBPACK_IMPORTED_MODULE_2__["CustomersComponent"] },
-    //{ path: 'customers/:id', component: CustomerEditComponent},
+    { path: 'customers/:id', component: _customers_customer_edit_component__WEBPACK_IMPORTED_MODULE_4__["CustomerEditComponent"] },
     { path: 'customers/:id', component: _customers_customer_edit_reactive_component__WEBPACK_IMPORTED_MODULE_5__["CustomerEditReactiveComponent"] },
     { path: '**', pathMatch: 'full', redirectTo: '/customers' } //catch any unfound routes and redirect to home page
 ];
