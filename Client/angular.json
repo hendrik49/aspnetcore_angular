@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Angular-ASPNET-Core-Seed": {
+    "angular_netcore": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -101,7 +101,7 @@
         }
       }
     },
-    "Angular-ASPNET-Core-Seed-e2e": {
+    "angular_netcore-e2e": {
       "root": "",
       "sourceRoot": "",
       "projectType": "application",
