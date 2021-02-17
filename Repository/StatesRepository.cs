@@ -10,10 +10,10 @@ namespace angular_netcore.Repository
 {
     public class StatesRepository : IStatesRepository
     {
-        private readonly CustomersDbContext _Context;
+        private readonly AngularNetCoreDbContext _Context;
         private readonly ILogger _Logger;
 
-        public StatesRepository(CustomersDbContext context, ILoggerFactory loggerFactory)
+        public StatesRepository(AngularNetCoreDbContext context, ILoggerFactory loggerFactory)
         {
             _Context = context;
             _Logger = loggerFactory.CreateLogger("StatesRepository");

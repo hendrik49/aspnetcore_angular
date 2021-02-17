@@ -12,10 +12,10 @@ namespace angular_netcore.Repository
     public class CustomersRepository : ICustomersRepository
     {
 
-        private readonly CustomersDbContext _Context;
+        private readonly AngularNetCoreDbContext _Context;
         private readonly ILogger _Logger;
 
-        public CustomersRepository(CustomersDbContext context, ILoggerFactory loggerFactory) {
+        public CustomersRepository(AngularNetCoreDbContext context, ILoggerFactory loggerFactory) {
           _Context = context;
           _Logger = loggerFactory.CreateLogger("CustomersRepository");
         }

@@ -29,17 +29,17 @@ namespace angular_netcore
         public void ConfigureServices(IServiceCollection services)
         {
             //Add PostgreSQL support
-            //services.AddDbContext<CustomersDbContext>(options => {
+            //services.AddDbContext<AngularNetCoreDbContext>(options => {
             //    options.UseNpgsql(Configuration.GetConnectionString("CustomersPostgresConnectionString"));
             //});
 
             //Add SQL Server support
-            //services.AddDbContext<CustomersDbContext>(options => {
+            //services.AddDbContext<AngularNetCoreDbContext>(options => {
             //    options.UseSqlServer(Configuration.GetConnectionString("CustomersSqlServerConnectionString"));
             //});
 
             //Add SqLite support
-            services.AddDbContext<CustomersDbContext>(options => {
+            services.AddDbContext<AngularNetCoreDbContext>(options => {
                 options.UseSqlite(Configuration.GetConnectionString("CustomersSqliteConnectionString"));
             });
 
@@ -79,13 +79,13 @@ namespace angular_netcore
 
             services.AddScoped<ICustomersRepository, CustomersRepository>();
             services.AddScoped<IStatesRepository, StatesRepository>();
-            services.AddTransient<CustomersDbSeeder>();
+            services.AddTransient<DbSeeder>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, 
             IWebHostEnvironment env, 
-            CustomersDbSeeder customersDbSeeder, 
+            DbSeeder customersDbSeeder, 
             IAntiforgery antiforgery)
         {
             if (env.IsDevelopment())
